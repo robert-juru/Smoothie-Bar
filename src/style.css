@@ -1,0 +1,254 @@
+@font-face {
+  font-family: "title-font";
+  src: url("./title-font.ttf") format("truetype"),
+    url("./Lobster.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+h2,
+h3 {
+  color: #e2225b;
+}
+
+header {
+  font-family: "title-font", cursive;
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+  padding: 0 60px;
+  display: flex;
+  margin-top: 30px;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid lightgray;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  z-index: -1;
+}
+
+.smoothies-header {
+  height: 220px;
+  width: 300px;
+}
+
+a {
+  text-decoration: none;
+  color: #c11a4d;
+  font-size: 24px;
+}
+
+.nav-wrapper {
+  display: flex;
+  gap: 30px;
+}
+
+body {
+  background-color: #f0f8ff;
+  height: 100%;
+}
+
+.home-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 200px;
+}
+
+.container {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  box-sizing: border-box;
+  display: grid;
+  border-radius: 2em;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  grid-template-rows: 150px 1fr;
+  grid-template-columns: 1fr;
+  margin: 50px;
+  background-color: white;
+  min-width: 1400px;
+}
+
+.container h1 {
+  font-size: 48px;
+}
+
+.shop-info {
+  max-width: 60ch;
+}
+
+.welcome-article {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding-left: 150px;
+}
+
+.welcome-article h2 {
+  font-size: 36px;
+  font-family: "title-font", cursive;
+}
+
+.welcome-article p {
+  font-size: 20px;
+}
+
+button {
+  display: inline-block;
+  padding: 12px 48px;
+  background-color: #e2225b;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: #c11a4d;
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-card {
+  font-family: "title-font", cursive;
+  background-color: #6699cc;
+  color: white;
+  border-radius: 12px;
+  border: 5px solid rgba(255, 255, 255, 0.125);
+  filter: drop-shadow(0 20px 10px rgba(0, 0, 0, 0.125));
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 2em;
+  width: 500px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  text-align: center;
+}
+
+.menu-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(520px, 1fr));
+  gap: 20px;
+  width: 1200px;
+  margin: auto;
+  grid-template-rows: 1fr;
+}
+
+#menu-header {
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  justify-content: center;
+  margin-left: -70px;
+  align-items: center;
+  font-family: "title-font", cursive;
+  letter-spacing: 2px;
+  font-size: 48px;
+}
+
+.smoothie-icon {
+  height: 250px;
+  width: 250px;
+}
+
+article {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+article h3 {
+  font-size: 32px;
+}
+
+.menu-photo {
+  height: 150px;
+  width: 200px;
+  margin-bottom: -30px;
+}
+
+form {
+  width: 65%;
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: 8px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+textarea {
+  height: 120px;
+  resize: none;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: whitesmoke;
+}
+
+.contact-details-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-left: 1px solid lightgray;
+  padding-left: 50px;
+  background-color: #f8f4f0;
+}
+
+.contact-info,
+.address-info,
+.opening-hours-info {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.form-input,
+.form-textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
